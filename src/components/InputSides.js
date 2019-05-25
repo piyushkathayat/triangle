@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { InputLabel } from './InputLabel';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import './Triangle.css';
+import './InputSides.css';
 
 export default class InputSides extends Component {
     constructor(props) {
@@ -12,7 +12,7 @@ export default class InputSides extends Component {
         };
     };
 
-    onHandleValidate = () => {  
+    onHandleValidate = () => { 
         this.props.validateSides(this.state.sides);
     };
 
@@ -25,6 +25,12 @@ export default class InputSides extends Component {
         }
         this.setState(sides);
     };
+    
+    handleOnEnter = (e) => {
+        if (e.keyCode === 13 && e.shiftKey === false) {
+            this.props.validateSides(this.state.sides);
+        }
+    }
 
     isDisabled = () => _.size(this.state.sides) !== 3;
 
@@ -35,15 +41,17 @@ export default class InputSides extends Component {
                 <InputLabel id='first' inputValue={this.handleInputValue} />
                 <InputLabel id='second' inputValue={this.handleInputValue} />
                 <InputLabel id='third' inputValue={this.handleInputValue} />
-
-                <button
-                    data-ts="Button"
-                    className="ts-primary"
-                    disabled={this.isDisabled()}
-                    onClick={this.onHandleValidate}
-                >
-                    <span>Validate Triangle</span>
-                </button>
+                <div className="validation-buttons">
+                    <button
+                        data-ts="Button"
+                        className="ts-primary"
+                        disabled={this.isDisabled()}
+                        onKeyDown={this.handleOnEnter}
+                        onClick={this.onHandleValidate}
+                    >
+                        <span>Validate Triangle</span>
+                    </button>
+	            </div>
             </fieldset>
         </form>
         )
@@ -53,4 +61,3 @@ export default class InputSides extends Component {
 InputSides.propType = {
     validateSides: PropTypes.func
 };
-
