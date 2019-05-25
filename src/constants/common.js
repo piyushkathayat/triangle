@@ -1,5 +1,7 @@
 export const MESSAGE_HEADER = 'Validate Triangle and find the type of Triangle.';
 
+export const INCLUDES_ZERO = 'One of the side length is 0';
+
 export const INVALID_ENTRY = 'Invalid entry';
 
 export const NEGATIVE_VALUE = 'Sides can not be negative';

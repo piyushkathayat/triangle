@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 export class InputLabel extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state = {
-            value: ''
-        };
-    }
+        this.state = { value: '' };
+    };
     
     inputHandler = (event) => {
         this.setState({value: event.target.value})

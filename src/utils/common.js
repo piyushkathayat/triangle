@@ -1,9 +1,9 @@
-import {INVALID_ENTRY, TRIANGLE_RULE, NEGATIVE_VALUE, SCALENE_TRIANGLE, EQUILATERAL_TRIANGLE, ISOSCELES_TRIANGLE } from '../constants/common';
+import {INCLUDES_ZERO, TRIANGLE_RULE, NEGATIVE_VALUE, SCALENE_TRIANGLE, EQUILATERAL_TRIANGLE, ISOSCELES_TRIANGLE } from '../constants/common';
 import { values } from 'lodash';
 
 export const validateSides = (sides) => {
     if (sides.includes(0)) {
-        return {isValid: false, message: INVALID_ENTRY};
+        return {isValid: false, message: INCLUDES_ZERO};
     } else if (sides.some( x => x < 0 )) {
         return {isValid: false, message: NEGATIVE_VALUE};
     } else if (!isSatisfyTriangleRule(sides)) {
