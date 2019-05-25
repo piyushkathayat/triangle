@@ -6,15 +6,9 @@ const ResultPanel = (props) => {
     
     const {error, result} = props;
     
-    const renderResult = () => (
-        <div className="valid">
-            {`Triangle is ${result}`}
-        </div>
-    );
+    const renderResult = () => <div>{`Triangle is ${result}`}</div>;
     
-    const renderError = () => (
-        <div className="error">{error.message}</div>
-      );
+    const renderError = () => <div className="error">{error.message}</div>;
 
     return (
         (error || result) &&

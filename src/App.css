@@ -1,8 +1,9 @@
-.App {
-  text-align: center;
+body {
+  margin: 0 auto;
+  width: 1024px;
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 5em;
   display: flex;
