@@ -1,0 +1,12 @@
+.triangle-panel {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.triangle-input {
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+}

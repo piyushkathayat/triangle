@@ -1,0 +1,19 @@
+.result-panel {
+    border: 1px solid;
+    width: 400px;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 35px;
+}
+
+.valid {
+    font-size: 20px;
+}
+
+.error {
+    font-size: 20px;
+    color: red;
+    text-align: center;
+}
