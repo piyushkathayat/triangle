@@ -30,4 +30,5 @@ You can also run a single test using
 - css
 - prop-types
 - jest and enzyme
+- lodash
 ```
