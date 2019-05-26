@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { InputLabel } from './InputLabel';
+import { VALIDATE_BUTTON_LABEL } from '../constants/common';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import './InputSides.css';
@@ -49,7 +50,7 @@ export default class InputSides extends Component {
                         onKeyDown={this.handleOnEnter}
                         onClick={this.onHandleValidate}
                     >
-                        <span>Validate Triangle</span>
+                        <span>{VALIDATE_BUTTON_LABEL}</span>
                     </button>
 	            </div>
             </fieldset>
