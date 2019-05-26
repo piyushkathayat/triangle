@@ -1,12 +1,10 @@
-export const MESSAGE_HEADER = 'Validate Triangle and find the type of Triangle.';
+export const MESSAGE_HEADER = 'Validate Triangle and Determine the type of a triangle.';
 
-export const INCLUDES_ZERO = 'One of the side length is 0';
+export const INCLUDES_ZERO = 'One of the side length is 0.';
 
 export const INVALID_ENTRY = 'Invalid entry';
 
-export const NEGATIVE_VALUE = 'Sides can not be negative';
-
-export const MESSAGE_PANEL_EDIT_MESSAGE = 'Edit the public message';
+export const NEGATIVE_VALUE = 'Sides can not be negative.';
 
 export const TRIANGLE_RULE = 'The sum of two sides of a triangle should be greater than the third side.';
 

@@ -2,3 +2,9 @@
     text-align: center;
     padding-top: 10px;
 }
+
+.triangle-input {
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+}
