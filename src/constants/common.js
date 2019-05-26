@@ -13,3 +13,5 @@ export const SCALENE_TRIANGLE = 'Scalene Triangle';
 export const ISOSCELES_TRIANGLE = 'Isosceles Triangle';
 
 export const EQUILATERAL_TRIANGLE = 'Equilateral Triangle';
+
+export const VALIDATE_LABEL = 'Validate Triangle';
