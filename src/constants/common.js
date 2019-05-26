@@ -1,4 +1,4 @@
-export const MESSAGE_HEADER = 'Validate Triangle and Determine the type of a triangle.';
+export const MESSAGE_HEADER = 'Validate and Determine the type of a triangle.';
 
 export const INCLUDES_ZERO = 'One of the side length is 0.';
 
