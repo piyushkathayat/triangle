@@ -14,4 +14,4 @@ export const ISOSCELES_TRIANGLE = 'Isosceles Triangle';
 
 export const EQUILATERAL_TRIANGLE = 'Equilateral Triangle';
 
-export const VALIDATE_LABEL = 'Validate Triangle';
+export const VALIDATE_BUTTON_LABEL = 'Validate Triangle';
