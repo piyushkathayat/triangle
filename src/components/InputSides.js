@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { InputLabel } from './InputLabel';
 import { VALIDATE_BUTTON_LABEL } from '../constants/common';
 import PropTypes from 'prop-types';
-import _ from 'lodash';
+import { size } from 'lodash';
 import './InputSides.css';
 
 export default class InputSides extends Component {
@@ -33,7 +33,7 @@ export default class InputSides extends Component {
         }
     }
 
-    isDisabled = () => _.size(this.state.sides) !== 3;
+    isDisabled = () => size(this.state.sides) !== 3;
 
     render() {
         return (
